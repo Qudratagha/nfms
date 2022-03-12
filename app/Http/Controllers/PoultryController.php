@@ -7,14 +7,9 @@ use Illuminate\Http\Request;
 
 class PoultryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return view('poultry.index');
     }
 
     /**

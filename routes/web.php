@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PoultryController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,5 @@ Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 //Route::get('/dashboard1', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard1');
 
+Route::resource('/poultry', PoultryController::class);
 
